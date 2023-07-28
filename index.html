@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind css</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css " />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-[Poppins] h-screen">
+  
+    <!-- header part -->
+    <header class="bg-pink-500 gap-2 rounded-full py-4 px-4">
+      
+      <nav class=" flex  md:grid-cols-3 justify-between">
+        
+        <div class="">
+          <ul class="flex lg:items-center mid:items-center gap-4 pt-4">
+            <li><a class="hover:text-gray-300 " href="#">Home</a></li>
+            <li><a class="hover:text-gray-300"  href="#">About us</a></li>
+            <li><a class="hover:text-gray-300"  href="#">Shop now</a></li>
+            <li><a class="hover:text-gray-300"  href="#">Product</a></li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <img src="images/logo.png" alt="" />
+          <h3>Fruit Burst</h3>
+        </div>
+
+        <div class="pt-2">
+          <button  class=" < class="fa-solid fa-magnifying-glass border-0 rounded-full "><input class="border-0 border-0 rounded-full p-2" type="search" placeholder="search......" />
+            <span class="hover:text-gray-300 m-0 pr-0  border-0 "> <i class="fa-solid fa-magnifying-glass"></i></span>
+           </button>
+          
+        </div>
+      </nav>
+    </header>
+    
+    
+    <main>
+    
+    <!--slider banner part here -->
+
+        
+        
+    <div class=" h-full mx-auto   mb-4">
+      <div class=" bg-gray-700 pt-4 pb-0  mb-10">
+        
+        <h1 class="text-4xl font-bold text-white text-center">Exotic tastes at your <br>
+          doorstep </h1>
+          
+          <p class="text-sm text-white text-center mb-4 mr-4">We supply highly quality organic products    <span class="hover:text-white-500  bg-red-400 p-2 rounded-lg hover:p-2 hover:bg-white">
+            shop now 
+         </span></p> 
+          
+         <div id="default-carousel" class="relative" data-carousel="static">
+      
+          <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+          
+            
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl ">Primer Slide</span>
+                  <img src="../images/banner1.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                  
+                  
+                  
+              </div>
+                
+                
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="../images/banner2.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+              </div>
+          
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="../images/banner3.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+              </div>
+              
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="../images/banner4.png" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" >
+              </div>
+              
+          </div>
+          
+          
+          <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+              <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="3"></button>
+          </div>
+      
+          <button type="button" class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                  <span class="hidden">Anterior</span>
+              </span>
+          </button>
+          
+           <button type="button" class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 0 group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                  <svg class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  <span class="hidden"></span>
+              </span>
+          </button> 
+          
+
+          
+      </div>
+
+
+      
+      <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+      
+      </div>
+      
+      
+      <section class="grid grid-cols-5 ml-16 gap-8 bottom-5 bg-white  mb-10">
+        <img src="images/fruit1.png" alt="">
+        <img src="images/fruit2.png" alt="">
+        <img src="images/fruit3.png" alt="">
+        <img src="images/fruit4.png" alt="">
+        <img src="images/fruit5.png" alt="">
+        
+  </section>
+
+  </div>
+          
+    
+    <!-- deal of the day -->
+         
+         
+        <div class="bg-pink-50">
+          <div class="bg-pink-50">
+
+            <div class="flex justify-between gap-2 m-6 p-4  rounded-md">
+              <div>
+                  <h1 class="text-3xl font-bold">Hot of the day</h1>
+                  <p class="text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                    Latin literature from 45 BC, making it over 2000 years old.</p>
+            
+              </div>
+       
+            
+            <!-- time part is here -->
+            <div>
+                <div class="">
+                
+                  <span class="text-3xl font-bold">29 :</span>
+                  <span class="text-3xl font-bold">15 :</span> 
+                  <span class="text-3xl font-bold">25 :</span> 
+                  <span class="text-3xl font-bold">08</span> 
+                  
+                </div>
+                
+                <div class="text-sm">
+                    <span>Days</span>
+                    <span>Hours</span>
+                    <span>Minutes</span>
+                    <span>Second</span>
+                </div>
+                
+            </div>
+        
+  
+        </div>
+          
+          </div>
+         
+    
+           <div class="grid grid-cols-4 gap-6 m-6 px-12">
+              <!-- 1st -->
+           <div>
+              <section class="rounded overflow-hidden shadow-lg  ">
+                  <img class="border-b-2 border-black full " src="images/fruit6.png" />
+                  <h3 class="text-2xl font-semibold">12.85$-19.85$</h3>
+                  <p class="text-sm text-center">Apple</p>
+                    <section>
+                              <span class="pl-4"
+                              ><i class="fa fa-star" aria-hidden="true"></i>
+                              </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                    </section>
+                    <section class="flex justify-between ">
+                              <button
+                              class="hover:text-white-500 rounded-lg hover:p-2 hover:bg-red-300">
+                              Close
+                              </button>
+                              <button
+                              class="hover:text-white-500 rounded-lg hover:p-2 hover:bg-red-300">
+                              Shop Now
+                              </button>
+                </section>
+            </div>
+           <div>
+              <section class="rounded overflow-hidden shadow-lg  ">
+                  <img class="border-b-2 border-black full " src="images/fruit7.png" />
+                  <h3 class="text-2xl font-semibold">12.85$-19.85$</h3>
+                  <p class="text-sm text-center">Orange</p>
+                    <section>
+                              <span class="pl-4"
+                              ><i class="fa fa-star" aria-hidden="true"></i>
+                              </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                    </section>
+                    <section class="flex justify-between ">
+                              <button
+                              class="hover:text-white-500 rounded-lg hover:p-2 hover:bg-red-300">
+                              Close
+                              </button>
+                              <button
+                              class="hover:text-white-500 rounded-lg hover:p-2 hover:bg-red-300">
+                              Shop Now
+                              </button>
+                </section>
+            </div>
+           <div>
+              <section class="rounded overflow-hidden shadow-lg  ">
+                  <img class="border-b-2 border-black full " src="images/fruit8.png" />
+                  <h3 class="text-2xl font-semibold">12.85$-19.85$</h3>
+                  <p class="text-sm text-center">Dragon</p>
+                    <section>
+                              <span class="pl-4"
+                              ><i class="fa fa-star" aria-hidden="true"></i>
+                              </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                    </section>
+                    <section class="flex justify-between ">
+                              <button
+                              class="hover:text-white-500 rounded-lg hover:p-2 hover:bg-red-300">
+                              Close
+                              </button>
+                              <button
+                              class="hover:text-white-500 rounded-lg hover:p-2 hover:bg-red-300">
+                              Shop Now
+                              </button>
+                </section>
+            </div>
+           <div>
+              <section class="rounded overflow-hidden shadow-lg  ">
+                  <img class="border-b-2 border-black full " src="images/fruit9.png" />
+                  <h3 class="text-2xl font-semibold">12.85$-19.85$</h3>
+                  <p class="text-sm text-center">Banana</p>
+                    <section>
+                              <span class="pl-4"
+                              ><i class="fa fa-star" aria-hidden="true"></i>
+                              </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                              <span class=""><i class="fa fa-star" aria-hidden="true"></i> </span>
+                    </section>
+                    <section class="flex justify-between ">
+                              <button
+                              class="hover:text-white-500 rounded-lg hover:p-2 hover:bg-red-300">
+                              Close
+                              </button>
+                              <button
+                              class="hover:text-white-500 rounded-lg hover:p-2 hover:bg-red-300">
+                              Shop Now
+                              </button>
+                </section>
+            </div>
+      
+          </div>
+        </div>
+        
+         
+    
+    <!-- meat the team section -->
+    
+    <div>
+        <section class="bg-[url('../images/team.png')] bg-content m-10 p-20">
+        
+          <h3 class="text-4xl text-center text-white font-bold">Meat The Team Member</h3>
+          <p class="text-center text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+            Latin literature from 45 BC, making it over 2000 years old.</p>
+              
+              
+              <div class="grid  mid:grid-cols-2 lg:grid-cols-4 gap-4 ">
+                        
+                <!-- 1st profile  -->
+                <div>
+                  <img src="images/member1.png" alt="">
+                  <h3 class="text-xl text-white">Awal Hossain</h3>
+                  <p class="text-white text-sm ">Fruits Expert</p>
+                  <br>
+                  <a class="bg-red-200 hover:text-red-700 p-4 rounded-full " href="#"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                  <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                  <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                  
+              
+              </div>
+              <!-- 2nd profile -->
+              <div>
+                    <img src="images/member2.png" alt="">
+                    
+                    <h3 class="text-xl text-white">Safia Chowdhury</h3>
+                    <p class="text-white text-sm ">Fruits Expert</p>
+                    <br>
+                    
+                    <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                    <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                    <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                    
+              </div>
+              <!-- 3rd profile -->
+              <div>
+                  <img src="images/member3.png" alt="">
+                  
+                  <h3 class="text-xl text-white">Safia Chowdhury</h3>
+                  <p class="text-white text-sm ">Fruits Expert</p>
+                  <br>
+                  
+                  <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                  <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                  <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                  
+              </div>
+              
+              <!-- 4th profile -->
+              <div>
+                  <img src="images/member4.png" alt="">
+                  
+                  <h3 class="text-xl text-white">Safia Chowdhury</h3>
+                  <p class="text-white text-sm ">Fruits Expert</p>
+                  <br>
+                  
+                  <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                  <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                  <a class="bg-red-200 hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-instagram fa-beat"></i></a>
+                  
+              </div>
+                      
+              </div>
+                
+        </section>
+    
+    </div>
+    
+    
+    <!-- choose us part here -->
+    <div class="gap-4 bg-pink-50 mb-0">
+    
+        <div class="">
+            <h3 class="text-4xl font-bold text-center p-4">Why Choose Us</h3>
+            <p class="text-center mb-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+            Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+      
+     <div class="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 bg-pink-50">
+        
+            
+            <div class="" >
+              
+                  <!-- dedicated team-->
+                  <div>
+                    <section class="flex m-2 gap-4 items-center">
+                        <span class="bg-pink-100 rounded-full p-2 ">
+                          <i class="fa-solid fa-people-group fa-beat"></i>   
+                      </span>
+                        <h3 class="text-3xl py-4">  <span class="border-b-2 border-black"> Dedicated</span> team</h3>
+                    </section>
+                      <p class="pl-14">Professional employees are there for you to pick <br>
+                      the most amazing and fresh fruits.</p>
+                  </div>
+                
+                    <!-- fresh best -->
+                    <div>
+                      <section class="flex m-2 gap-4 items-center">
+                          <span class="bg-pink-100 rounded-full p-2 ">
+                            <i class="fa-sharp fa-solid fa-heart-circle-check fa-beat"></i>  
+                        </span>
+                          <h3 class="text-3xl py-4">  <span class="border-b-2 border-black"> Fresh is</span> Best</h3>
+                      </section>
+                        <p class="pl-14">Professional employees are there for you to pick <br>
+                        the most amazing and fresh fruits.</p>
+                    </div>
+                
+                      <!-- certificate -->
+                      <div>
+                        <section class="flex m-2 gap-4 items-center">
+                            <span class="bg-pink-100 rounded-full p-2 ">
+                              <i class="fa-sharp fa-solid fa-certificate fa-beat"></i> 
+                          </span>
+                            <h3 class="text-3xl py-4">  <span class="border-b-2 border-black"> Gift</span> certificates</h3>
+                        </section>
+                          <p class="pl-14">Professional employees are there for you to pick <br>
+                          the most amazing and fresh fruits.</p>
+                      </div>    
+              </div>
+              
+              <!-- image part -->
+              <section class="m-4">
+                <img src="images/whychoose1.png" alt="">
+              </section>
+          
+         <div>
+              <!-- supply -->
+              <div>
+                <section class="flex m-2 gap-4 items-center">
+                    <span class="bg-pink-100 rounded-full p-2 ">
+                      <i class="fa-sharp fa-solid fa-truck-field fa-beat"></i>              </span>
+                    <h3 class="text-3xl py-4">  <span class="border-b-2 border-black"> Integrated </span> Supplier</h3>
+                </section>
+                  <p class="pl-14">Professional employees are there for you to pick <br>
+                  the most amazing and fresh fruits.</p>
+              </div>
+          
+                <!-- practice -->
+                <div>
+                  <section class="flex m-2 gap-4 text-left items-center">
+                      <span class="bg-pink-100 rounded-full p-2 ">
+                        <i class="fa-sharp fa-solid fa-check fa-beat"></i> 
+                      </span>
+                      <h3 class="text-3xl py-4"> <span class="border-b-2 border-black">Sustainable</span> Practice</h3>
+                      </section>
+                    <p class="pl-14">Professional employees are there for you to pick <br>
+                    the most amazing and fresh fruits.</p>
+                </div>
+          
+                <!-- benefits-->
+                <div>
+                  <section class="flex m-2 gap-4 text-left items-center">
+                      <span class="bg-pink-100 rounded-full p-2 ">
+                        <i class="fa-sharp fa-solid fa-face-smile fa-beat"></i></span>
+                      <h3 class="text-3xl py-4"><span class="border-b-2 border-black">Benefits</span> Only</h3>
+                      </section>
+                    <p class="pl-12">Professional employees are there for you to pick <br>
+                    the most amazing and fresh fruits.</p>
+                </div>
+         
+        </div>
+
+
+      </div>
+      
+      
+    
+    </main>
+    
+    
+    
+    <!-- footer section part here -->
+    <footer class="bg-black sm:flex-col">
+    
+      <div class="flex justify-center p-8 items-center gap-4 m-4">
+      <img src="images/logo.png" alt="">
+      <h2 class="text-white text-4xl">Fruit Burst</h2>
+      </div>
+      
+      <div>
+        <div class="text-white">
+          <ul class="flex justify-center gap-4 pb-8">
+            <li><a class="hover:text-red-300" href="#">Home</a></li>
+            <li><a class="hover:text-red-300"  href="#">About us</a></li>
+            <li><a class="hover:text-red-300"  href="#">Shop now</a></li>
+            <li><a class="hover:text-red-300"  href="#">Product</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="flex justify-center gap-4 pb-16">
+      
+        <a class="bg-white hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-youtube fa-beat"></i></a>
+        <a class="bg-white hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-facebook fa-beat"></i></a>
+        <a class="bg-white hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-linkedin fa-beat"></i></a>
+        <a class="bg-white hover:text-red-500 p-4 rounded-full " href="#"><i class="fa-brands fa-instagram fa-beat"></i></a>
+        
+      </div>
+      <p class="text-white text-center pb-12">Copyright @2023 programming hero 8th batch</p>
+      
+    </footer>
+    
+  </body>
+</html>
